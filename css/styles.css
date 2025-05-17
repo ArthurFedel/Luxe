@@ -1,0 +1,171 @@
+:root {
+    --Grey-100: #F4F3F8;
+    --Grey-300: #909090;
+    --Grey-900: #333333;
+    --Pink-500: #DC0155;
+    --font-bebas: "Bebas Neue", sans-serif;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, #fff0f5 0%, #f4f3f8 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*************************** header da página ***************************/
+.header-page {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+}
+
+.header-title {
+    display: flex;
+    padding-left: 10rem;
+    color: var(--Pink-500);
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 5rem;
+    padding-right: 37vw;
+
+    & a {
+        color: var(--Grey-900);
+        font-weight: 500;
+    }
+}
+
+/*************************** fim header da página ***************************/
+
+/*************************** hero da página ***************************/
+.hero {
+    margin-top: 5rem;
+    width: 50vw;
+    display: flex;
+    padding-left: 15rem;
+    flex-direction: column;
+}
+
+.hero-description {
+    color: var(--Grey-900);
+    font-size: 2rem;
+}
+
+.hero-luxe {
+    color: var(--Pink-500);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11rem;
+    font-family: var(--font-bebas);
+}
+
+.hero-subtitle {
+    color: var(--Grey-900);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11rem;
+    font-family: var(--font-bebas);
+    line-height: 8rem;
+}
+
+.hero-paragraph {
+    margin-top: 3rem;
+    color: var(--Grey-900);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 4rem;
+    border-radius: 3.2rem;
+    color: white;
+    background-color: var(--Pink-500);
+    border: none;
+    padding: 1.8rem 2rem;
+    width: 16rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--Pink-500);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border-color: var(--Grey-900);
+    color: var(--Grey-900);
+    transition: 1s;
+}
+
+.img-girl {
+    display: flex;
+    justify-content: end;
+    margin-top: -45rem;
+}
+
+/*************************** fim hero da página ***************************/
+
+/*************************** info da página ***************************/
+.info {
+margin-left: 14rem;
+min-height: 50vh;
+margin-top: -18rem;
+}
+
+.box-info {
+    display: flex;
+    gap: 18rem;
+    
+    & img {
+        padding-bottom: 1.5rem;
+    }
+
+    & h2 {
+        color: var(--Grey-900);
+        padding-bottom: 1rem;
+    }
+}
+
+.title-info {
+    font-family: var(--font-bebas);
+    color: var(--Grey-900);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 500;
+    padding-bottom: 4rem;
+}
+
+/*************************** fim info da página ***************************/
